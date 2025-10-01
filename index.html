@@ -7,14 +7,37 @@
 
 <body>
   <main>
-    <section id="juego">  
+    <section id="login">
+      <img src="/logo-monkey.svg" width="50" alt="Logo Monkey">
+      <h1>MonkeyType Uta</h1>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <button id="show-register" class="boton">Create new account</button>
+    </section>
+
+    <section id="register" style="display:none">
+      <img src="/logo-monkey.svg" width="50" alt="Logo Monkey">
+      <h1>Create Account</h1>
+      <form id="register-form">
+        <input type="text" id="new-username" placeholder="Username" required>
+        <input type="password" id="new-password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <button id="show-login">Back to Login</button>
+    </section>
+
+    <section id="juego" style="display:none">  
       <time></time>
       <img src="/logo-monkey.svg" width="50" alt="Logo Monkey">
       <h1>MonkeyType Uta</h1>
       <p></p>
       <input autofocus>
     </section>
-    <section id="resultados">
+    <section id="resultados" style="display:none">
       <h1>Resultados</h1>
       <h2>Palabras por minuto</h2>
       <h3 id="resultados-minuto"></h3>
