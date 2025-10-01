@@ -146,6 +146,7 @@ import { palabras as INITIAL_WORDS } from './data.js'
       $firstWord.querySelector('letter').classList.add('active')
     }
   
+    
     function initEvents() {
       document.addEventListener('keydown', () => {
         $entrada.focus()
